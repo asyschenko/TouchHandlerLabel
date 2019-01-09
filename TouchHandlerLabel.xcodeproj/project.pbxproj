@@ -11,6 +11,7 @@
 		A7E1FAC021E5F1BC004F8C53 /* TouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FABF21E5F1BC004F8C53 /* TouchHandler.swift */; };
 		A7E1FAC221E5F21F004F8C53 /* BasicTouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FAC121E5F21F004F8C53 /* BasicTouchHandler.swift */; };
 		A7E1FAC421E5F250004F8C53 /* RangesTouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FAC321E5F250004F8C53 /* RangesTouchHandler.swift */; };
+		A7E1FAC621E5F27E004F8C53 /* SimpleTextTouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FAC521E5F27E004F8C53 /* SimpleTextTouchHandler.swift */; };
 		A7E3D93321E5EEE3000DEE5B /* TouchHandlerLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */; };
 		A7E3D93821E5EEE3000DEE5B /* TouchHandlerLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3D93721E5EEE3000DEE5B /* TouchHandlerLabelTests.swift */; };
 		A7E3D93A21E5EEE3000DEE5B /* TouchHandlerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +37,7 @@
 		A7E1FABF21E5F1BC004F8C53 /* TouchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHandler.swift; sourceTree = "<group>"; };
 		A7E1FAC121E5F21F004F8C53 /* BasicTouchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTouchHandler.swift; sourceTree = "<group>"; };
 		A7E1FAC321E5F250004F8C53 /* RangesTouchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangesTouchHandler.swift; sourceTree = "<group>"; };
+		A7E1FAC521E5F27E004F8C53 /* SimpleTextTouchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextTouchHandler.swift; sourceTree = "<group>"; };
 		A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchHandlerLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchHandlerLabel.h; sourceTree = "<group>"; };
 		A7E3D92D21E5EEE3000DEE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				A7E1FAC121E5F21F004F8C53 /* BasicTouchHandler.swift */,
 				A7E1FAC321E5F250004F8C53 /* RangesTouchHandler.swift */,
+				A7E1FAC521E5F27E004F8C53 /* SimpleTextTouchHandler.swift */,
 				A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */,
 				A7E1FABF21E5F1BC004F8C53 /* TouchHandler.swift */,
 				A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */,
@@ -276,6 +279,7 @@
 				A7E1FAC421E5F250004F8C53 /* RangesTouchHandler.swift in Sources */,
 				A7E1FAC021E5F1BC004F8C53 /* TouchHandler.swift in Sources */,
 				A7E1FABE21E5F15B004F8C53 /* TouchHandlerLabel.swift in Sources */,
+				A7E1FAC621E5F27E004F8C53 /* SimpleTextTouchHandler.swift in Sources */,
 				A7E1FAC221E5F21F004F8C53 /* BasicTouchHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
