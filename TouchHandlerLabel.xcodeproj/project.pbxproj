@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7E1FABE21E5F15B004F8C53 /* TouchHandlerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */; };
 		A7E3D93321E5EEE3000DEE5B /* TouchHandlerLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */; };
 		A7E3D93821E5EEE3000DEE5B /* TouchHandlerLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3D93721E5EEE3000DEE5B /* TouchHandlerLabelTests.swift */; };
 		A7E3D93A21E5EEE3000DEE5B /* TouchHandlerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHandlerLabel.swift; sourceTree = "<group>"; };
 		A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchHandlerLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchHandlerLabel.h; sourceTree = "<group>"; };
 		A7E3D92D21E5EEE3000DEE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		A7E3D92B21E5EEE3000DEE5B /* TouchHandlerLabel */ = {
 			isa = PBXGroup;
 			children = (
+				A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */,
 				A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */,
 				A7E3D92D21E5EEE3000DEE5B /* Info.plist */,
 			);
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					A7E3D92821E5EEE3000DEE5B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A7E3D93121E5EEE3000DEE5B = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E1FABE21E5F15B004F8C53 /* TouchHandlerLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		A7E3D93E21E5EEE3000DEE5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = asyschenko.TouchHandlerLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		A7E3D93F21E5EEE3000DEE5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		A7E3D94121E5EEE3000DEE5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TouchHandlerLabelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		A7E3D94221E5EEE3000DEE5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TouchHandlerLabelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
