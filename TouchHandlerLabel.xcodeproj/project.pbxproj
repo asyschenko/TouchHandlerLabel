@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7E1FABE21E5F15B004F8C53 /* TouchHandlerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */; };
+		A7E1FAC021E5F1BC004F8C53 /* TouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FABF21E5F1BC004F8C53 /* TouchHandler.swift */; };
 		A7E3D93321E5EEE3000DEE5B /* TouchHandlerLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */; };
 		A7E3D93821E5EEE3000DEE5B /* TouchHandlerLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3D93721E5EEE3000DEE5B /* TouchHandlerLabelTests.swift */; };
 		A7E3D93A21E5EEE3000DEE5B /* TouchHandlerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHandlerLabel.swift; sourceTree = "<group>"; };
+		A7E1FABF21E5F1BC004F8C53 /* TouchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHandler.swift; sourceTree = "<group>"; };
 		A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchHandlerLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchHandlerLabel.h; sourceTree = "<group>"; };
 		A7E3D92D21E5EEE3000DEE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */,
+				A7E1FABF21E5F1BC004F8C53 /* TouchHandler.swift */,
 				A7E3D92C21E5EEE3000DEE5B /* TouchHandlerLabel.h */,
 				A7E3D92D21E5EEE3000DEE5B /* Info.plist */,
 			);
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E1FAC021E5F1BC004F8C53 /* TouchHandler.swift in Sources */,
 				A7E1FABE21E5F15B004F8C53 /* TouchHandlerLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
