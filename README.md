@@ -16,3 +16,9 @@ label.add(touchHandler: simpleTextHandler)
 ```
 
 More examples you can find in TouchHandlerLabelExample
+
+### CocoaPods
+
+```ruby
+pod 'TouchHandlerLabel'
+```
