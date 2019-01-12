@@ -15,4 +15,4 @@ simpleTextHandler.selectedColor = UIColor.red.withAlphaComponent(0.5)
 label.add(touchHandler: simpleTextHandler)
 ```
 
-More examples tou can find in TouchHandlerLabelExample
+More examples you can find in TouchHandlerLabelExample
