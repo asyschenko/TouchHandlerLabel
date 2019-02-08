@@ -40,9 +40,12 @@ class CustomTouchHandler: TouchHandler {
 class ViewController: UIViewController {
     
     @IBOutlet weak var label: TouchHandlerLabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: 1000)
         
         let rangesTouchHandler = RangesTouchHandler(ranges: [NSRange(location: 0, length: 11), NSRange(location: 13, length: 12)]) { (range, str) in
             print("Range:", range)
@@ -50,7 +53,7 @@ class ViewController: UIViewController {
         }
         
         rangesTouchHandler.normalColor = UIColor.blue
-        rangesTouchHandler.selectedColor = UIColor.blue.withAlphaComponent(0.5)
+        rangesTouchHandler.selectedColor = UIColor.green
         label.add(touchHandler: rangesTouchHandler)
         
         let simpleTextHandler = SimpleTextTouchHandler(text: "text") { (_, str) in

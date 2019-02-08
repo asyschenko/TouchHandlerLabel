@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29199C8C220D6FBD0069901B /* TouchHandlerLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */; };
+		29199C8D220D6FBD0069901B /* TouchHandlerLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3D92921E5EEE3000DEE5B /* TouchHandlerLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7E1FABE21E5F15B004F8C53 /* TouchHandlerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */; };
 		A7E1FAC021E5F1BC004F8C53 /* TouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FABF21E5F1BC004F8C53 /* TouchHandler.swift */; };
 		A7E1FAC221E5F21F004F8C53 /* BasicTouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1FAC121E5F21F004F8C53 /* BasicTouchHandler.swift */; };
@@ -28,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		29199C8E220D6FBD0069901B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7E3D92021E5EEE3000DEE5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E3D92821E5EEE3000DEE5B;
+			remoteInfo = TouchHandlerLabel;
+		};
 		A7E3D93421E5EEE3000DEE5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A7E3D92021E5EEE3000DEE5B /* Project object */;
@@ -36,6 +45,20 @@
 			remoteInfo = TouchHandlerLabel;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29199C90220D6FBD0069901B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				29199C8D220D6FBD0069901B /* TouchHandlerLabel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A7E1FABD21E5F15A004F8C53 /* TouchHandlerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHandlerLabel.swift; sourceTree = "<group>"; };
@@ -83,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29199C8C220D6FBD0069901B /* TouchHandlerLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,10 +231,12 @@
 				A7E3D94321E5EF7B000DEE5B /* Sources */,
 				A7E3D94421E5EF7B000DEE5B /* Frameworks */,
 				A7E3D94521E5EF7B000DEE5B /* Resources */,
+				29199C90220D6FBD0069901B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				29199C8F220D6FBD0069901B /* PBXTargetDependency */,
 			);
 			name = TouchHandlerLabelExample;
 			productName = TouchHandlerLabelExample;
@@ -324,6 +350,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		29199C8F220D6FBD0069901B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7E3D92821E5EEE3000DEE5B /* TouchHandlerLabel */;
+			targetProxy = 29199C8E220D6FBD0069901B /* PBXContainerItemProxy */;
+		};
 		A7E3D93521E5EEE3000DEE5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A7E3D92821E5EEE3000DEE5B /* TouchHandlerLabel */;
@@ -563,6 +594,7 @@
 		A7E3D95721E5EF7C000DEE5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TouchHandlerLabelExample/Info.plist;
@@ -580,6 +612,7 @@
 		A7E3D95821E5EF7C000DEE5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TouchHandlerLabelExample/Info.plist;

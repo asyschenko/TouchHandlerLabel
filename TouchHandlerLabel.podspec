@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "TouchHandlerLabel"
-  s.version       = "0.1"
+  s.version       = "0.1.2"
   s.homepage      = "https://github.com/asyschenko/TouchHandlerLabel"
   s.summary       = "Extended UILabel for touch handling text like URL, email e.t.c"
   s.license       = { :type => "MIT", :file => "LICENSE" }

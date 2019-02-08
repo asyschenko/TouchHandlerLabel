@@ -153,6 +153,33 @@ open class TouchHandlerLabel: UILabel {
         return attrString
     }
     
+    private func touchEnd(touch: UITouch, handle: Bool = true) {
+        if let selectedItem = selectedItem, let selectedRange = selectedRange {
+            let attributes = selectedItem.touchHandler.attributesForNormalStateBy(range: selectedRange)
+            
+            textStorage.setAttributes(correct(attributes: attributes), range: selectedRange)
+            setNeedsDisplay()
+            
+            if handle {
+                let location = touch.location(in: self)
+                var glyphRange = NSRange()
+                
+                layoutManager.characterRange(forGlyphRange: selectedRange, actualGlyphRange: &glyphRange)
+                
+                if layoutManager.boundingRect(forGlyphRange: glyphRange, in: textContainer).contains(location) {
+                    var returnString = ""
+                    
+                    if let range = Range(selectedRange, in: textStorage.string) {
+                        returnString = String(textStorage.string[range])
+                    }
+                    selectedItem.touchHandler.handleClickBy(range: selectedRange, text: returnString)
+                }
+            }
+        }
+        selectedItem = nil
+        selectedRange = nil
+    }
+    
     // MARK: - Initializers
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -207,29 +234,14 @@ open class TouchHandlerLabel: UILabel {
         guard let touch = touches.first else {
             return
         }
-        
-        if let selectedItem = selectedItem, let selectedRange = selectedRange {
-            let attributes = selectedItem.touchHandler.attributesForNormalStateBy(range: selectedRange)
-            
-            textStorage.setAttributes(correct(attributes: attributes), range: selectedRange)
-            setNeedsDisplay()
-            
-            let location = touch.location(in: self)
-            var glyphRange = NSRange()
-            
-            layoutManager.characterRange(forGlyphRange: selectedRange, actualGlyphRange: &glyphRange)
-            
-            if layoutManager.boundingRect(forGlyphRange: glyphRange, in: textContainer).contains(location) {
-                var returnString = ""
-                
-                if let range = Range(selectedRange, in: textStorage.string) {
-                    returnString = String(textStorage.string[range])
-                }
-                selectedItem.touchHandler.handleClickBy(range: selectedRange, text: returnString)
-            }
+        touchEnd(touch: touch)
+    }
+    
+    override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
         }
-        selectedItem = nil
-        selectedRange = nil
+        touchEnd(touch: touch, handle: false)
     }
     
     open override func drawText(in rect: CGRect) {
