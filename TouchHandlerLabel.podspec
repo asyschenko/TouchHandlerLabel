@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "TouchHandlerLabel"
-  s.version       = "0.1.2"
+  s.version       = "0.2.0"
   s.homepage      = "https://github.com/asyschenko/TouchHandlerLabel"
   s.summary       = "Extended UILabel for touch handling text like URL, email e.t.c"
   s.license       = { :type => "MIT", :file => "LICENSE" }
@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/asyschenko/TouchHandlerLabel.git", :tag => "#{s.version}" }
   s.source_files  = "TouchHandlerLabel/*.{swift}"
-  s.swift_version = "4.2"
+  s.swift_version = "5.0"
   
 end
