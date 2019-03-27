@@ -30,8 +30,10 @@ open class SimpleTextTouchHandler: BasicTouchHandler {
         }
         
         let returnRanges = ranges.map({ (currentRange) -> NSRange in
-            return NSRange(location: currentRange.lowerBound.encodedOffset,
-                           length: currentRange.upperBound.encodedOffset - currentRange.lowerBound.encodedOffset)
+            let location = currentRange.lowerBound.utf16Offset(in: text)
+            let length = currentRange.upperBound.utf16Offset(in: text) - location
+            
+            return NSRange(location: location, length: length)
         })
         
         if let first = returnRanges.first {

@@ -13,8 +13,10 @@ class CustomTouchHandler: TouchHandler {
     
     func rangesFor(text: String) -> [NSRange] {
         if let range = text.range(of: "Custom touch handler") {
-            return [NSRange(location: range.lowerBound.encodedOffset,
-                            length: range.upperBound.encodedOffset - range.lowerBound.encodedOffset)]
+            let location = range.lowerBound.utf16Offset(in: text)
+            let length = range.upperBound.utf16Offset(in: text) - location
+            
+            return [NSRange(location: location, length: length)]
         }
         return [NSRange]()
     }
